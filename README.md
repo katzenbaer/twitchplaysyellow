@@ -1,4 +1,4 @@
-﻿twitchplays-C#
+﻿TwitchPlays
 =====================================
 
 This software is licensed under GNU General Public License v3.  
