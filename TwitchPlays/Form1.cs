@@ -262,7 +262,8 @@ namespace TwitchPlays
                         this.Invoke(new Action(
                             () =>
                             {
-                                lblTimespan.Text = (DateTime.Now - Program.RunStart).ToString(@"d'd 'h'h 'm'm 's's'");
+                                lblTimespan.Text = (Program.RunStart - DateTime.Now).ToString(@"dh':'mm':'ss");
+                                //lblTimespan.Text = (DateTime.Now - Program.RunStart).ToString(@"d'd 'h'h 'm'm 's's'");
                                 if (Program.TallyTime > DateTime.Now) // Counting down
                                 {
                                     lblVoteClock.Text = Program.VoteSpan.ToString(@"ss\.fff's left'");
@@ -326,7 +327,8 @@ namespace TwitchPlays
                 }
                 else if (Program.IsMainThread)
                 {
-                    lblTimespan.Text = (DateTime.Now - Program.RunStart).ToString(@"d'd 'h'h 'm'm 's's'");
+                    lblTimespan.Text = (Program.RunStart - DateTime.Now).ToString(@"dh':'mm':'ss");
+                    //lblTimespan.Text = (DateTime.Now - Program.RunStart).ToString(@"d'd 'h'h 'm'm 's's'");
                     if (Program.TallyTime > DateTime.Now) // Counting down
                     {
                         lblVoteClock.Text = Program.VoteSpan.ToString(@"ss\.fff's left'");

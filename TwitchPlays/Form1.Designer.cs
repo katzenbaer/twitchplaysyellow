@@ -88,6 +88,7 @@ namespace TwitchPlays
             this.pbInputAlert32 = new System.Windows.Forms.PictureBox();
             this.pbClock32 = new System.Windows.Forms.PictureBox();
             this.pbAlert32 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpOptions.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbModeForeground)).BeginInit();
@@ -561,12 +562,25 @@ namespace TwitchPlays
             this.pbAlert32.TabIndex = 18;
             this.pbAlert32.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("codefont1", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Aquamarine;
+            this.label1.Location = new System.Drawing.Point(10, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(307, 39);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "It\'s a whole new world we live in...";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // LogForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(326, 481);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblVoteResult);
             this.Controls.Add(this.pbInputAlert32);
             this.Controls.Add(this.lblInputAlert);
@@ -649,6 +663,7 @@ namespace TwitchPlays
         private System.Windows.Forms.Label lblDemocracyCount;
         private System.Windows.Forms.Label lblAnarchyCount;
         private System.Windows.Forms.PictureBox pbModeForeground;
+        private System.Windows.Forms.Label label1;
 
     }
 }
