@@ -765,7 +765,9 @@ namespace TwitchPlays
                 if (GameMode == User.ModeType.ANARCHY) // Live Mode
                 {
                     Nominee n = new Nominee(keyNominee.Keys[0], 1);
-                    Thread vJoyThread = new Thread(() => _logform.vJoySendNominee(n));
+                    //Thread vJoyThread = new Thread(() => _logform.vJoySendNominee(n));
+                    Thread vjoy_thread = new Thread(() => _logform.vJoySendButton((uint)n.Keys[0], 1));
+                    vjoy_thread.Start();
 
                     u.LastNominee = n;
                     ShowMessage(e.Data.Nick, n.Name);

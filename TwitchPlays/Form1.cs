@@ -672,14 +672,38 @@ namespace TwitchPlays
             }
         }
 
-        private void vJoySendButton(uint btn, uint cnt)
+        public void vJoySendButton(uint btn, uint cnt)
         {
-            for (int i = 0; i < cnt; i++)
+            Console.WriteLine("vJoy: Sending " + btn + ", " + btn + " time(s)");
+            if (this.InvokeRequired)
             {
-                joystick.SetBtn(true, id, btn + 1);
-                Thread.Sleep(150);
-                joystick.SetBtn(false, id, btn + 1);
-                Thread.Sleep(500);
+                for (int i = 0; i < cnt; i++)
+                {
+                    this.Invoke(new Action(
+                            () =>
+                            {
+                                joystick.SetBtn(true, id, btn + 1);
+                            })
+                        );
+                    Thread.Sleep(150);
+                    this.Invoke(new Action(
+                            () =>
+                            {
+                                joystick.SetBtn(false, id, btn + 1);
+                            })
+                        );
+                    Thread.Sleep(500);
+                }
+            }
+            else if (Program.IsMainThread)
+            {
+                for (int i = 0; i < cnt; i++)
+                {
+                    joystick.SetBtn(true, id, btn + 1);
+                    Thread.Sleep(150);
+                    joystick.SetBtn(false, id, btn + 1);
+                    Thread.Sleep(500);
+                }
             }
         }
 
