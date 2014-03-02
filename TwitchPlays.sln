@@ -5,11 +5,11 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitchPlays", "Twitchplays\TwitchPlays.csproj", "{CB0E8608-CDF2-41C3-8F59-9770EEBADA5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartIrc4net", "..\..\SmartIrc4net-master\SmartIrc4net-master\SmartIrc4net.csproj", "{91D3003B-7E65-4EAF-8EE1-DA43832E7A9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartIrc4net", "..\SmartIrc4net-master\SmartIrc4net-master\SmartIrc4net.csproj", "{91D3003B-7E65-4EAF-8EE1-DA43832E7A9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.vs2010", "..\..\log4net-trunk\src\log4net\log4net.vs2010.csproj", "{181FE707-E161-4722-9F38-6AAAB6FAA106}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarkSoftProxy", "..\starksoftproxy-master\StarkSoftProxy.csproj", "{3F8CF2C1-EA37-444F-8693-A3A00B1131D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarkSoftProxy", "..\..\starksoftproxy-master\StarkSoftProxy.csproj", "{3F8CF2C1-EA37-444F-8693-A3A00B1131D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.vs2010", "..\log4net-trunk\src\log4net\log4net.vs2010.csproj", "{181FE707-E161-4722-9F38-6AAAB6FAA106}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,21 +55,6 @@ Global
 		{91D3003B-7E65-4EAF-8EE1-DA43832E7A9C}.twitchplayspokemon|Any CPU.ActiveCfg = Release-noautosave|Any CPU
 		{91D3003B-7E65-4EAF-8EE1-DA43832E7A9C}.twitchplayspokemon|Any CPU.Build.0 = Release-noautosave|Any CPU
 		{91D3003B-7E65-4EAF-8EE1-DA43832E7A9C}.twitchplayspokemon|x86.ActiveCfg = Release-noautosave|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.im420blaziken|Any CPU.ActiveCfg = im420blaziken|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.im420blaziken|Any CPU.Build.0 = im420blaziken|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.im420blaziken|x86.ActiveCfg = im420blaziken|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release|Any CPU.Build.0 = Release|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release|x86.ActiveCfg = Release|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release-noautosave|Any CPU.ActiveCfg = Release-noautosave|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release-noautosave|Any CPU.Build.0 = Release-noautosave|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release-noautosave|x86.ActiveCfg = Release-noautosave|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.twitchplayspokemon|Any CPU.ActiveCfg = Release-noautosave|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.twitchplayspokemon|Any CPU.Build.0 = Release-noautosave|Any CPU
-		{181FE707-E161-4722-9F38-6AAAB6FAA106}.twitchplayspokemon|x86.ActiveCfg = Release-noautosave|Any CPU
 		{3F8CF2C1-EA37-444F-8693-A3A00B1131D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F8CF2C1-EA37-444F-8693-A3A00B1131D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F8CF2C1-EA37-444F-8693-A3A00B1131D2}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -85,6 +70,21 @@ Global
 		{3F8CF2C1-EA37-444F-8693-A3A00B1131D2}.twitchplayspokemon|Any CPU.ActiveCfg = Release-noautosave|Any CPU
 		{3F8CF2C1-EA37-444F-8693-A3A00B1131D2}.twitchplayspokemon|Any CPU.Build.0 = Release-noautosave|Any CPU
 		{3F8CF2C1-EA37-444F-8693-A3A00B1131D2}.twitchplayspokemon|x86.ActiveCfg = Release-noautosave|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.im420blaziken|Any CPU.ActiveCfg = im420blaziken|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.im420blaziken|Any CPU.Build.0 = im420blaziken|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.im420blaziken|x86.ActiveCfg = im420blaziken|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release|x86.ActiveCfg = Release|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release-noautosave|Any CPU.ActiveCfg = Release-noautosave|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release-noautosave|Any CPU.Build.0 = Release-noautosave|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release-noautosave|x86.ActiveCfg = Release-noautosave|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.twitchplayspokemon|Any CPU.ActiveCfg = Release-noautosave|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.twitchplayspokemon|Any CPU.Build.0 = Release-noautosave|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.twitchplayspokemon|x86.ActiveCfg = Release-noautosave|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

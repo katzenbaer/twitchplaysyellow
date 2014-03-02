@@ -138,7 +138,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="LICENSE.md" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -155,13 +154,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SmartIrc4net-master\SmartIrc4net-master\SmartIrc4net.csproj">
-      <Project>{91d3003b-7e65-4eaf-8ee1-da43832e7a9c}</Project>
-      <Name>SmartIrc4net</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="README.md" />
     <None Include="Resources\clock32.png" />
   </ItemGroup>
   <ItemGroup>
@@ -174,7 +166,6 @@
     <None Include="Resources\000.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Image1.png" />
     <Content Include="Resources\pikachu_left.png" />
     <Content Include="Resources\pikachu_right.png" />
     <Content Include="vJoyInterface.dll">
@@ -201,6 +192,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SmartIrc4net-master\SmartIrc4net-master\SmartIrc4net.csproj">
+      <Project>{91d3003b-7e65-4eaf-8ee1-da43832e7a9c}</Project>
+      <Name>SmartIrc4net</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

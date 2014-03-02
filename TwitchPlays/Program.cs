@@ -319,7 +319,7 @@ namespace TwitchPlays
                 return keyMap;
             }
         }
-        private static DateTime _runStart = new DateTime(2014, 2, 16, 19, 0, 0).ToLocalTime();
+        private static DateTime _runStart = new DateTime(2014, 3, 2, 12, 0, 0).ToLocalTime();
         public static DateTime RunStart
         {
             get
@@ -765,7 +765,7 @@ namespace TwitchPlays
                 if (GameMode == User.ModeType.ANARCHY) // Live Mode
                 {
                     Nominee n = new Nominee(keyNominee.Keys[0], 1);
-                    _logform.vJoySendNominee(n);
+                    Thread vJoyThread = new Thread(() => _logform.vJoySendNominee(n));
 
                     u.LastNominee = n;
                     ShowMessage(e.Data.Nick, n.Name);
