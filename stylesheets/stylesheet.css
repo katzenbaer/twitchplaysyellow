@@ -94,7 +94,7 @@ h6 {
 }
 
 p {
-  margin: 10px 0 10px 0;
+  margin: 10px 0 0px 0;
 }
 
 footer p {
@@ -300,10 +300,6 @@ Full-Width Styles
 
 #project_title {
   margin: 0;
-  color: #fff;
-  font-size: 42px;
-  font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
   width: 253px;
   height: 59px;
   background: url('../images/twitchplays_logo.png') no-repeat;
