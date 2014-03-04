@@ -305,7 +305,7 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
   width: 253px;
   height: 59px;
-  background-image: url(../images/twitchplays_logo.png) no-repeat;
+  background: url(../images/twitchplays_logo.png) no-repeat;
 }
 
 #project_tagline {
