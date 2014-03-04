@@ -40,7 +40,7 @@
           <a class="gdocs_link" href="https://docs.google.com/document/d/1X0wgUMv8S8qjftGVQqBgkf-quSc0A_zGDdebxYqf_YI" target="_blank">Kinomora&apos;s Google Doc</a>
           <a class="yellow_download_link" href="https://mega.co.nz/#!uspT2T6R!-o2QDWLWca_CWa2_Lvy5xBTorrPpTnUndJIPNhpm3jw" target="_blank">Download Yellow Sav</a>
           <a class="" href="http://www.twitch.tv/twitchplayspokemonyellow/chat?popout=&secret=safe" target=></a>
-          <a href="http://www.twitch.tv/twitchplayspokemonyellow/chat?popout=&secret=safe" onclick="window.open(this.href, 'Twitch', 'left=20,top=20,width=400,height=600,toolbar=0,resizable=0'); return false;" >Open Chat</a>
+          <!--<a href="http://www.twitch.tv/twitchplayspokemonyellow/chat?popout=&secret=safe" onclick="window.open(this.href, 'Twitch', 'left=20,top=20,width=400,height=600,toolbar=0,resizable=0'); return false;" >Open Chat</a>-->
         </p>
         <div id="video">
           <div id='playerEOLbfXVqDTUC'></div>
@@ -49,15 +49,16 @@
               file: 'rtmp://192.241.255.15/live/tippy',
               image: 'http://im420blaziken.github.io/twitchplays/images/stream_background_cropped.png',
               title: 'TwitchPlaysYellow Plays Crystal',
-              width: '852',
-              height: '480',
+              width: '100%',
+              aspectratio: '16:9',
+              autostart: 'true',
               primary: 'flash'
             });
           </script>
         </div>
-        <!--<div id="chat">
-            <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://twitch.tv/chat/embed?channel=twitchplayspokemonyellow&amp;popout_chat=true" height="480" width="350"></iframe>
-        </div>-->
+        <div id="chat">
+            <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://www.twitch.tv/twitchplayspokemonyellow/chat?popout=&secret=safe" height="480" width="350"></iframe>
+        </div>
       </section>
     </div>
 
