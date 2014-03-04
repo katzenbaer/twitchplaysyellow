@@ -300,9 +300,9 @@ Full-Width Styles
 
 #project_title {
   margin: 0;
-  width: 253px;
+  width: 100%;
   height: 59px;
-  background: url('../images/twitchplays_logo.png') no-repeat;
+  background: url('../images/twitchplays_logo.png') no-repeat center;
 }
 
 #project_tagline {
