@@ -31,21 +31,26 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>
-          <div id='playerLFKrDFkmhOZI'></div>
-          <script type='text/javascript'>
-              jwplayer('playerLFKrDFkmhOZI').setup({
-                  file: 'rtmp://192.241.255.15/live/tippy',
-                  image: 'http://im420blaziken.github.io/twitchplays/images/stream_background_cropped.png',
-                  title: 'twitchplayspokemonyellow',
-                  width: '100%',
-                  aspectratio: '16:9',
-                  primary: 'flash'
-              });
-          </script>
-        </p>
-      </section>
+      <div id="video">
+        <section id="main_content" class="inner">
+          <p>
+            <div id='playerLFKrDFkmhOZI'></div>
+            <script type='text/javascript'>
+                jwplayer('playerLFKrDFkmhOZI').setup({
+                    file: 'rtmp://192.241.255.15/live/tippy',
+                    image: 'http://im420blaziken.github.io/twitchplays/images/stream_background_cropped.png',
+                    title: 'twitchplayspokemonyellow',
+                    width: '100%',
+                    aspectratio: '16:9',
+                    primary: 'flash'
+                });
+            </script>
+          </p>
+        </section>
+      </div>
+      <div id="chat">
+        <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://twitch.tv/chat/embed?channel=twitchplayspokemonyellow&amp;popout_chat=true" height="500" width="350"></iframe>
+      </div>
     </div>
 
     <!-- FOOTER  -->
