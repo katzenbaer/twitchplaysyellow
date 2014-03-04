@@ -339,8 +339,16 @@ Full-Width Styles
   background: url(../images/sprite_gdocs.png) no-repeat top left;
 }
 
+#notice {
+  background-color: rgba(0, 0, 0, 0.74);
+  color: white;
+}
+
 #video, #chat {
   display: inline-block;
+}
+
+#video {
   vertical-align: middle;
 }
 
