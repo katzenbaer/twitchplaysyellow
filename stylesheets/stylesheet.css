@@ -370,7 +370,7 @@ Full-Width Styles
   background: url(../images/sprite_download.png) no-repeat top right;
 }
 
-.video, .chat {
+#video, #chat {
   display: inline-block;
 }
 
