@@ -342,14 +342,16 @@ Full-Width Styles
 #notice {
   background-color: rgba(0, 0, 0, 0.74);
   color: white;
+  margin-bottom: 4px;
 }
 
 #video, #chat {
   display: inline-block;
+  vertical-align: middle;
 }
 
-#video {
-  vertical-align: middle;
+#chat {
+  
 }
 
 #main_content_wrap {
