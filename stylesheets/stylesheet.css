@@ -341,6 +341,7 @@ Full-Width Styles
 
 #video, #chat {
   display: inline-block;
+  vertical-align: middle;
 }
 
 #main_content_wrap {
