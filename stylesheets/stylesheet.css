@@ -275,9 +275,9 @@ Full-Width Styles
   top:0;
   right: 10px;
   z-index: 10;
-  padding: 10px 50px 10px 10px;
+  padding: 10px;
   color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  background: #6441a5 no-repeat 95% 50%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
@@ -305,7 +305,7 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
   width: 253px;
   height: 59px;
-  background: url(../images/twitchplays_logo.png) no-repeat;
+  background: url('../images/twitchplays_logo.png') no-repeat;
 }
 
 #project_tagline {
