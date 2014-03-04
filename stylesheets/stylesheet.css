@@ -303,6 +303,9 @@ Full-Width Styles
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
+  width: 253px;
+  height: 59px;
+  background-image: url(../images/twitchplays_logo.png) no-repeat;
 }
 
 #project_tagline {
@@ -323,7 +326,7 @@ Full-Width Styles
   /*background: url('../images/icon_download.png') no-repeat 0% 90%;*/
 }
 
-.zip_download_link {
+.yellow_download_link {
   display: block;
   float: right;
   width: 90px;
@@ -331,6 +334,16 @@ Full-Width Styles
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom left;
+}
+
+.gdocs_link {
+  display: block;
+  float: right;
+  width: 70px;
+  height:70px;
+  text-indent: -5000px;
+  overflow: hidden;
+  background: url(../images/sprite_gdocs.png) no-repeat bottom left;
 }
 
 .tar_download_link {
@@ -344,8 +357,12 @@ Full-Width Styles
   margin-left: 10px;
 }
 
-.zip_download_link:hover {
+.yellow_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top left;
+}
+
+.gdocs_link:hover {
+  background: url(../images/sprite_gdocs.png) no-repeat top left;
 }
 
 .tar_download_link:hover {
