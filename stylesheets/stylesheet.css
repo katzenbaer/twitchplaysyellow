@@ -355,9 +355,8 @@ Full-Width Styles
 }
 
 #twitchtv-viewer {
-  position: fixed;
-  top: 0;
-  left: 50%;
+  position: relative;
+  top: -10000px;
   opacity: 0;
 }
 
