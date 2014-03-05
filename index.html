@@ -74,6 +74,25 @@
         <div id="chat">
             <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://www.twitch.tv/twitchplayspokemonyellow/chat?popout=&secret=safe" height="360" width="275"></iframe>
         </div>
+        <div id="twitchtv-viewer">
+          <object type="application/x-shockwave-flash" 
+                  height="25" 
+                  width="25" 
+                  id="live_embed_player_flash" 
+                  data="http://www.twitch.tv/widgets/live_embed_player.swf" 
+                  bgcolor="#000000">
+            <param  name="allowFullScreen" 
+                    value="false" />
+            <param  name="allowScriptAccess" 
+                    value="always" />
+            <param  name="allowNetworking" 
+                    value="all" />
+            <param  name="movie" 
+                    value="http://www.twitch.tv/widgets/live_embed_player.swf" />
+            <param  name="flashvars" 
+                    value="hostname=www.twitch.tv&channel=twitchplaysyellow&auto_play=true&start_volume=0" />
+          </object>
+        </div>
       </section>
     </div>
 
