@@ -1,2 +1,107 @@
+<!DOCTYPE html>
 <html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="TwitchPlaysYellow" />
+    
+    <title>TwitchPlaysYellow</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="http://jwpsrv.com/library/ejpMBqNDEeOssyIACi0I_Q.js"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script>
+      $(function() {
+        $("#chat").resizable({
+          alsoResize : '#chat_embed'
+        });
+      });
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-48627615-1', 'im420blaziken.github.io');
+      ga('send', 'pageview');
+    
+    </script>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="http://www.twitch.tv/twitchplayspokemonyellow" target="_blank">View on Twitch.TV</a>
+
+          <p id="project_title"></p>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>
+          <a class="gdocs_link" href="https://docs.google.com/document/d/1X0wgUMv8S8qjftGVQqBgkf-quSc0A_zGDdebxYqf_YI" target="_blank">Kinomora&apos;s Google Doc</a>
+          <a class="yellow_download_link" href="https://mega.co.nz/#!uspT2T6R!-o2QDWLWca_CWa2_Lvy5xBTorrPpTnUndJIPNhpm3jw" target="_blank">Download Yellow Sav</a>
+          <!--<a href="http://www.twitch.tv/twitchplayspokemonyellow/chat?popout=&secret=safe" onclick="window.open(this.href, 'Twitch', 'left=20,top=20,width=400,height=600,toolbar=0,resizable=0'); return false;" >Open Chat</a>-->
+        </p>
+        <!--<div id="notice">
+          <b>The lag-free stream is currently unavaiable as we perform maintenance.</b>
+        </div>-->
+        <!--<div id="notice">
+          <b>Please keep the <a href="http://www.twitch.tv/twitchplayspokemonyellow" target="_blank">Twitch.TV stream</a> open so you count toward our total viewers.</b>
+        </div>-->
+        <div id="video">
+          <div id='playerjcPDbxDUaJEf'></div>
+          <script type='text/javascript'>
+              jwplayer('playerjcPDbxDUaJEf').setup({
+                  file: 'rtmp://107.170.225.54/live/tippy',
+                  image: 'http://im420blaziken.github.io/twitchplays/images/stream_background_cropped.png',
+                  title: 'TwitchPlaysYellow Plays Crystal',
+                  width: '640',
+                  height: '360',
+                  autostart: 'true'
+              });
+          </script>
+        </div>
+        <div id="chat">
+            <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://www.twitch.tv/twitchplayspokemonyellow/chat?popout=&secret=safe" height="360" width="275"></iframe>
+        </div>
+        <div id="twitchtv-viewer">
+          <object type="application/x-shockwave-flash" 
+                  height="200" 
+                  width="300" 
+                  id="live_embed_player_flash" 
+                  data="http://www.twitch.tv/widgets/live_embed_player.swf" 
+                  bgcolor="#000000">
+            <param  name="allowFullScreen" 
+                    value="false" />
+            <param  name="allowScriptAccess" 
+                    value="always" />
+            <param  name="allowNetworking" 
+                    value="all" />
+            <param  name="movie" 
+                    value="http://www.twitch.tv/widgets/live_embed_player.swf" />
+            <param  name="flashvars" 
+                    value="hostname=www.twitch.tv&channel=twitchplayspokemonyellow&auto_play=true&start_volume=0" />
+          </object>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">TwitchPlaysYellow maintained by <a href="https://github.com/im420blaziken" target="_blank">im420blaziken</a></p>
+        <p>Published with <a href="http://pages.github.com" target="_blank">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+  </body>
 </html>
