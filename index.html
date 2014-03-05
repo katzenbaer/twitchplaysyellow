@@ -40,6 +40,28 @@
           <a id="forkme_banner" href="http://www.twitch.tv/twitchplayspokemonyellow">View on Twitch.TV</a>
 
           <p id="project_title"></p>
+          
+          <div id="twitchtv-viewer" style="float: left">
+          <object type="application/x-shockwave-flash" 
+                  height="200" 
+                  width="300" 
+                  id="live_embed_player_flash" 
+                  data="http://www.twitch.tv/widgets/live_embed_player.swf" 
+                  volume="0"
+                  bgcolor="#000000">
+            <param  name="allowFullScreen" 
+                    value="false" />
+            <param  name="allowScriptAccess" 
+                    value="always" />
+            <param  name="allowNetworking" 
+                    value="all" />
+            <param  name="movie" 
+                    value="http://www.twitch.tv/widgets/live_embed_player.swf" />
+            <param  name="flashvars" 
+                    value="hostname=www.twitch.tv&channel=twitchplayspokemonyellow&auto_play=true&start_volume=0" />
+            <param name="volume" value="0" />
+          </object>
+        </div>
         </header>
     </div>
 
@@ -73,27 +95,6 @@
         </div>
         <div id="chat">
             <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://www.twitch.tv/twitchplayspokemonyellow/chat?popout=&secret=safe" height="360" width="275"></iframe>
-        </div>
-        <div id="twitchtv-viewer" style="float: left">
-          <object type="application/x-shockwave-flash" 
-                  height="200" 
-                  width="300" 
-                  id="live_embed_player_flash" 
-                  data="http://www.twitch.tv/widgets/live_embed_player.swf" 
-                  volume="0"
-                  bgcolor="#000000">
-            <param  name="allowFullScreen" 
-                    value="false" />
-            <param  name="allowScriptAccess" 
-                    value="always" />
-            <param  name="allowNetworking" 
-                    value="all" />
-            <param  name="movie" 
-                    value="http://www.twitch.tv/widgets/live_embed_player.swf" />
-            <param  name="flashvars" 
-                    value="hostname=www.twitch.tv&channel=twitchplayspokemonyellow&auto_play=true&start_volume=0" />
-            <param name="volume" value="0" />
-          </object>
         </div>
       </section>
     </div>
