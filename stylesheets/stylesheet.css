@@ -354,6 +354,13 @@ Full-Width Styles
   margin-bottom: 7px;
 }
 
+#twitchtv-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
 #main_content_wrap {
   background: #f2f2f2;
   border-top: 1px solid #111;
