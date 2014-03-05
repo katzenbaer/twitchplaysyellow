@@ -97,7 +97,7 @@ h6 {
 }
 
 p {
-  margin: 10px 0 0px 0;
+  margin: 10px 0 20px 0;
 }
 
 footer p {
@@ -268,7 +268,7 @@ Full-Width Styles
 .inner {
   position: relative;
   max-width: 1280px;
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin: 0 auto;
 }
 
@@ -360,7 +360,8 @@ Full-Width Styles
   position: relative;
   top: -10000px;
   opacity: 0;
-  display: inline;
+  display: block;
+  margin-bottom: -200px;
 }
 
 #main_content_wrap {
