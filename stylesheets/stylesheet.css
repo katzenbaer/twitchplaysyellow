@@ -269,7 +269,6 @@ Full-Width Styles
   position: relative;
   max-width: 1280px;
   padding: 20px 10px;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -372,11 +371,16 @@ Full-Width Styles
 
 #main_content {
   padding-top: 10px;
+  text-align: center;
 }
 
 #footer_wrap {
   text-align: center;
   background: #212121;
+}
+
+div .half-width, div .third-width {
+  display: inline-table;
 }
 
 div .half-width {
