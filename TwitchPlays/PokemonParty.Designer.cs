@@ -62,7 +62,6 @@ namespace TwitchPlays
             this.pbSlotThree = new System.Windows.Forms.PictureBox();
             this.pbSlotTwo = new System.Windows.Forms.PictureBox();
             this.pbSlotOne = new System.Windows.Forms.PictureBox();
-            this.pbFrame = new System.Windows.Forms.PictureBox();
             this.grpTools.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotSix)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotFive)).BeginInit();
@@ -70,7 +69,6 @@ namespace TwitchPlays
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotThree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotTwo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotOne)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFrame)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCheckSave
@@ -88,7 +86,7 @@ namespace TwitchPlays
             // 
             this.txtSavPath.Location = new System.Drawing.Point(6, 19);
             this.txtSavPath.Name = "txtSavPath";
-            this.txtSavPath.Size = new System.Drawing.Size(269, 16);
+            this.txtSavPath.Size = new System.Drawing.Size(269, 22);
             this.txtSavPath.TabIndex = 2;
             // 
             // grpTools
@@ -98,8 +96,8 @@ namespace TwitchPlays
             this.grpTools.Controls.Add(this.lblFrameDimensions);
             this.grpTools.Controls.Add(this.txtSavPath);
             this.grpTools.Controls.Add(this.btnCheckSave);
-            this.grpTools.Font = new System.Drawing.Font("codefont1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpTools.ForeColor = System.Drawing.Color.White;
+            this.grpTools.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpTools.ForeColor = System.Drawing.SystemColors.WindowText;
             this.grpTools.Location = new System.Drawing.Point(86, 12);
             this.grpTools.Name = "grpTools";
             this.grpTools.Size = new System.Drawing.Size(281, 103);
@@ -134,7 +132,7 @@ namespace TwitchPlays
             this.lblFrameDimensions.AutoSize = true;
             this.lblFrameDimensions.Location = new System.Drawing.Point(48, 83);
             this.lblFrameDimensions.Name = "lblFrameDimensions";
-            this.lblFrameDimensions.Size = new System.Drawing.Size(227, 9);
+            this.lblFrameDimensions.Size = new System.Drawing.Size(234, 16);
             this.lblFrameDimensions.TabIndex = 3;
             this.lblFrameDimensions.Text = "The frame dimensions are 80 x 479 px.";
             // 
@@ -192,23 +190,11 @@ namespace TwitchPlays
             this.pbSlotOne.TabIndex = 4;
             this.pbSlotOne.TabStop = false;
             // 
-            // pbFrame
-            // 
-            this.pbFrame.ErrorImage = global::TwitchPlays.Properties.Resources.pkmn_frame;
-            this.pbFrame.Image = global::TwitchPlays.Properties.Resources.pkmn_frame;
-            this.pbFrame.Location = new System.Drawing.Point(287, 121);
-            this.pbFrame.Name = "pbFrame";
-            this.pbFrame.Size = new System.Drawing.Size(80, 479);
-            this.pbFrame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbFrame.TabIndex = 0;
-            this.pbFrame.TabStop = false;
-            this.pbFrame.Visible = false;
-            // 
             // PokemonParty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(377, 480);
             this.Controls.Add(this.pbSlotSix);
             this.Controls.Add(this.pbSlotFive);
@@ -217,7 +203,6 @@ namespace TwitchPlays
             this.Controls.Add(this.pbSlotTwo);
             this.Controls.Add(this.pbSlotOne);
             this.Controls.Add(this.grpTools);
-            this.Controls.Add(this.pbFrame);
             this.Name = "PokemonParty";
             this.Text = "PokemonParty";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PokemonParty_FormClosed);
@@ -231,15 +216,12 @@ namespace TwitchPlays
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotThree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotTwo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotOne)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFrame)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbFrame;
         private System.Windows.Forms.Button btnCheckSave;
         private System.Windows.Forms.TextBox txtSavPath;
         private System.Windows.Forms.GroupBox grpTools;

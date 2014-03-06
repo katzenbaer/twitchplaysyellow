@@ -71,11 +71,9 @@ namespace TwitchPlays
             this.txtAdminGoal = new System.Windows.Forms.TextBox();
             this.btnSetAdminGoal = new System.Windows.Forms.Button();
             this.lblTwitchPlays = new System.Windows.Forms.Label();
-            this.lblYellow = new System.Windows.Forms.Label();
             this.lblPokemon = new System.Windows.Forms.Label();
             this.lblTimespan = new System.Windows.Forms.Label();
             this.lblVoteClock = new System.Windows.Forms.Label();
-            this.lblAlert = new System.Windows.Forms.Label();
             this.chatBox = new System.Windows.Forms.ListBox();
             this.lblPollNum = new System.Windows.Forms.Label();
             this.lblVoteResult = new System.Windows.Forms.Label();
@@ -83,19 +81,20 @@ namespace TwitchPlays
             this.btnDumpLog = new System.Windows.Forms.Button();
             this.lblDemocracyCount = new System.Windows.Forms.Label();
             this.lblAnarchyCount = new System.Windows.Forms.Label();
+            this.lblAlert = new System.Windows.Forms.Label();
             this.pbModeForeground = new System.Windows.Forms.PictureBox();
             this.pbModeBackground = new System.Windows.Forms.PictureBox();
-            this.pbInputAlert32 = new System.Windows.Forms.PictureBox();
             this.pbClock32 = new System.Windows.Forms.PictureBox();
             this.pbAlert32 = new System.Windows.Forms.PictureBox();
+            this.pbInputAlert32 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grpOptions.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbModeForeground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbModeBackground)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInputAlert32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClock32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlert32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInputAlert32)).BeginInit();
             this.SuspendLayout();
             // 
             // logBox
@@ -108,12 +107,12 @@ namespace TwitchPlays
             // 
             // voteBox
             // 
-            this.voteBox.BackColor = System.Drawing.Color.Black;
+            this.voteBox.BackColor = System.Drawing.SystemColors.Control;
             this.voteBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.voteBox.Font = new System.Drawing.Font("codefont1", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voteBox.ForeColor = System.Drawing.Color.White;
+            this.voteBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.voteBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.voteBox.FormattingEnabled = true;
-            this.voteBox.ItemHeight = 17;
+            this.voteBox.ItemHeight = 18;
             this.voteBox.Items.AddRange(new object[] {
             "START",
             "SELECT",
@@ -126,15 +125,15 @@ namespace TwitchPlays
             this.voteBox.Location = new System.Drawing.Point(10, 202);
             this.voteBox.Name = "voteBox";
             this.voteBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.voteBox.Size = new System.Drawing.Size(353, 51);
+            this.voteBox.Size = new System.Drawing.Size(353, 54);
             this.voteBox.TabIndex = 1;
             this.voteBox.TabStop = false;
             // 
             // lblGoal
             // 
-            this.lblGoal.BackColor = System.Drawing.Color.Black;
-            this.lblGoal.Font = new System.Drawing.Font("codefont1", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGoal.ForeColor = System.Drawing.Color.Gold;
+            this.lblGoal.BackColor = System.Drawing.SystemColors.Control;
+            this.lblGoal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGoal.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblGoal.Location = new System.Drawing.Point(10, 78);
             this.lblGoal.Name = "lblGoal";
             this.lblGoal.Size = new System.Drawing.Size(305, 30);
@@ -157,7 +156,7 @@ namespace TwitchPlays
             // 
             this.txtDelayTest.Location = new System.Drawing.Point(6, 18);
             this.txtDelayTest.Name = "txtDelayTest";
-            this.txtDelayTest.Size = new System.Drawing.Size(154, 16);
+            this.txtDelayTest.Size = new System.Drawing.Size(154, 20);
             this.txtDelayTest.TabIndex = 9;
             this.txtDelayTest.Text = "300";
             // 
@@ -173,8 +172,8 @@ namespace TwitchPlays
             this.grpOptions.Controls.Add(this.lblMaxDelay);
             this.grpOptions.Controls.Add(this.txtMaxDelay);
             this.grpOptions.Controls.Add(this.btnAdminUp);
-            this.grpOptions.Font = new System.Drawing.Font("codefont1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpOptions.ForeColor = System.Drawing.Color.White;
+            this.grpOptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpOptions.ForeColor = System.Drawing.SystemColors.WindowText;
             this.grpOptions.Location = new System.Drawing.Point(651, 286);
             this.grpOptions.Name = "grpOptions";
             this.grpOptions.Size = new System.Drawing.Size(277, 180);
@@ -207,7 +206,7 @@ namespace TwitchPlays
             this.lblDurationOffset.AutoSize = true;
             this.lblDurationOffset.Location = new System.Drawing.Point(6, 40);
             this.lblDurationOffset.Name = "lblDurationOffset";
-            this.lblDurationOffset.Size = new System.Drawing.Size(137, 9);
+            this.lblDurationOffset.Size = new System.Drawing.Size(109, 13);
             this.lblDurationOffset.TabIndex = 4;
             this.lblDurationOffset.Text = "Duration Offset (secs)";
             // 
@@ -215,7 +214,7 @@ namespace TwitchPlays
             // 
             this.txtDurationOffset.Location = new System.Drawing.Point(149, 37);
             this.txtDurationOffset.Name = "txtDurationOffset";
-            this.txtDurationOffset.Size = new System.Drawing.Size(48, 16);
+            this.txtDurationOffset.Size = new System.Drawing.Size(48, 20);
             this.txtDurationOffset.TabIndex = 3;
             this.txtDurationOffset.Text = "30";
             // 
@@ -233,7 +232,7 @@ namespace TwitchPlays
             this.cbDisableVoting.AutoSize = true;
             this.cbDisableVoting.Location = new System.Drawing.Point(149, 59);
             this.cbDisableVoting.Name = "cbDisableVoting";
-            this.cbDisableVoting.Size = new System.Drawing.Size(108, 14);
+            this.cbDisableVoting.Size = new System.Drawing.Size(94, 17);
             this.cbDisableVoting.TabIndex = 2;
             this.cbDisableVoting.Text = "Disable Voting";
             this.cbDisableVoting.UseVisualStyleBackColor = true;
@@ -253,7 +252,7 @@ namespace TwitchPlays
             this.lblMaxDelay.AutoSize = true;
             this.lblMaxDelay.Location = new System.Drawing.Point(6, 18);
             this.lblMaxDelay.Name = "lblMaxDelay";
-            this.lblMaxDelay.Size = new System.Drawing.Size(101, 9);
+            this.lblMaxDelay.Size = new System.Drawing.Size(88, 13);
             this.lblMaxDelay.TabIndex = 1;
             this.lblMaxDelay.Text = "Max Delay (secs)";
             // 
@@ -261,7 +260,7 @@ namespace TwitchPlays
             // 
             this.txtMaxDelay.Location = new System.Drawing.Point(149, 15);
             this.txtMaxDelay.Name = "txtMaxDelay";
-            this.txtMaxDelay.Size = new System.Drawing.Size(48, 16);
+            this.txtMaxDelay.Size = new System.Drawing.Size(48, 20);
             this.txtMaxDelay.TabIndex = 0;
             this.txtMaxDelay.Text = "8";
             this.txtMaxDelay.Leave += new System.EventHandler(this.txtMaxDelay_Leave);
@@ -283,7 +282,7 @@ namespace TwitchPlays
             this.groupBox1.Controls.Add(this.btnSetAdminGoal);
             this.groupBox1.Controls.Add(this.txtDelayTest);
             this.groupBox1.Controls.Add(this.btnTestDelay);
-            this.groupBox1.Font = new System.Drawing.Font("codefont1", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.groupBox1.Location = new System.Drawing.Point(371, 286);
             this.groupBox1.Name = "groupBox1";
@@ -307,7 +306,7 @@ namespace TwitchPlays
             // 
             this.txtTestButton.Location = new System.Drawing.Point(6, 118);
             this.txtTestButton.Name = "txtTestButton";
-            this.txtTestButton.Size = new System.Drawing.Size(154, 16);
+            this.txtTestButton.Size = new System.Drawing.Size(154, 20);
             this.txtTestButton.TabIndex = 12;
             this.txtTestButton.Text = "0";
             // 
@@ -315,7 +314,7 @@ namespace TwitchPlays
             // 
             this.txtAdminGoal.Location = new System.Drawing.Point(6, 68);
             this.txtAdminGoal.Name = "txtAdminGoal";
-            this.txtAdminGoal.Size = new System.Drawing.Size(154, 16);
+            this.txtAdminGoal.Size = new System.Drawing.Size(154, 20);
             this.txtAdminGoal.TabIndex = 11;
             this.txtAdminGoal.Text = "Think 20s ahead";
             // 
@@ -332,9 +331,9 @@ namespace TwitchPlays
             // 
             // lblTwitchPlays
             // 
-            this.lblTwitchPlays.BackColor = System.Drawing.Color.Black;
-            this.lblTwitchPlays.Font = new System.Drawing.Font("codefont1", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTwitchPlays.ForeColor = System.Drawing.Color.White;
+            this.lblTwitchPlays.BackColor = System.Drawing.Color.Transparent;
+            this.lblTwitchPlays.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTwitchPlays.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblTwitchPlays.Location = new System.Drawing.Point(9, 9);
             this.lblTwitchPlays.Name = "lblTwitchPlays";
             this.lblTwitchPlays.Size = new System.Drawing.Size(306, 18);
@@ -343,37 +342,23 @@ namespace TwitchPlays
             this.lblTwitchPlays.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblTwitchPlays.Click += new System.EventHandler(this.lblTwitchPlays_Click);
             // 
-            // lblYellow
-            // 
-            this.lblYellow.AutoSize = true;
-            this.lblYellow.BackColor = System.Drawing.Color.Transparent;
-            this.lblYellow.Font = new System.Drawing.Font("codefont1", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYellow.ForeColor = System.Drawing.Color.Gold;
-            this.lblYellow.Location = new System.Drawing.Point(176, 27);
-            this.lblYellow.Name = "lblYellow";
-            this.lblYellow.Size = new System.Drawing.Size(94, 21);
-            this.lblYellow.TabIndex = 13;
-            this.lblYellow.Text = "Yellow";
-            this.lblYellow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // lblPokemon
             // 
-            this.lblPokemon.AutoSize = true;
-            this.lblPokemon.BackColor = System.Drawing.Color.Black;
-            this.lblPokemon.Font = new System.Drawing.Font("codefont1", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPokemon.ForeColor = System.Drawing.Color.White;
-            this.lblPokemon.Location = new System.Drawing.Point(62, 27);
+            this.lblPokemon.BackColor = System.Drawing.Color.Transparent;
+            this.lblPokemon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPokemon.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.lblPokemon.Location = new System.Drawing.Point(9, 27);
             this.lblPokemon.Name = "lblPokemon";
-            this.lblPokemon.Size = new System.Drawing.Size(108, 21);
+            this.lblPokemon.Size = new System.Drawing.Size(306, 21);
             this.lblPokemon.TabIndex = 14;
-            this.lblPokemon.Text = "Pokemon";
+            this.lblPokemon.Text = "Pokemon Yellow";
             this.lblPokemon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTimespan
             // 
-            this.lblTimespan.BackColor = System.Drawing.Color.Black;
-            this.lblTimespan.Font = new System.Drawing.Font("codefont1", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimespan.ForeColor = System.Drawing.Color.White;
+            this.lblTimespan.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimespan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimespan.ForeColor = System.Drawing.Color.Black;
             this.lblTimespan.Location = new System.Drawing.Point(8, 55);
             this.lblTimespan.Name = "lblTimespan";
             this.lblTimespan.Size = new System.Drawing.Size(309, 18);
@@ -384,8 +369,8 @@ namespace TwitchPlays
             // lblVoteClock
             // 
             this.lblVoteClock.BackColor = System.Drawing.Color.Transparent;
-            this.lblVoteClock.Font = new System.Drawing.Font("codefont1", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVoteClock.ForeColor = System.Drawing.Color.White;
+            this.lblVoteClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVoteClock.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblVoteClock.Location = new System.Drawing.Point(48, 152);
             this.lblVoteClock.Name = "lblVoteClock";
             this.lblVoteClock.Size = new System.Drawing.Size(122, 20);
@@ -393,25 +378,14 @@ namespace TwitchPlays
             this.lblVoteClock.Text = "00.00s left";
             this.lblVoteClock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblAlert
-            // 
-            this.lblAlert.Font = new System.Drawing.Font("codefont1", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlert.ForeColor = System.Drawing.Color.Orange;
-            this.lblAlert.Location = new System.Drawing.Point(12, 78);
-            this.lblAlert.Name = "lblAlert";
-            this.lblAlert.Size = new System.Drawing.Size(305, 30);
-            this.lblAlert.TabIndex = 19;
-            this.lblAlert.Text = "TwitchChat lag detected";
-            this.lblAlert.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // chatBox
             // 
-            this.chatBox.BackColor = System.Drawing.Color.Black;
+            this.chatBox.BackColor = System.Drawing.SystemColors.Control;
             this.chatBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.chatBox.Font = new System.Drawing.Font("codefont1", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chatBox.ForeColor = System.Drawing.Color.White;
+            this.chatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chatBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.chatBox.FormattingEnabled = true;
-            this.chatBox.ItemHeight = 14;
+            this.chatBox.ItemHeight = 15;
             this.chatBox.Items.AddRange(new object[] {
             "(00m:01s) <blank>: <blank>",
             "(00m:02s) <blank>: <blank>",
@@ -443,8 +417,8 @@ namespace TwitchPlays
             // lblPollNum
             // 
             this.lblPollNum.BackColor = System.Drawing.Color.Transparent;
-            this.lblPollNum.Font = new System.Drawing.Font("codefont1", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPollNum.ForeColor = System.Drawing.Color.White;
+            this.lblPollNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPollNum.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblPollNum.Location = new System.Drawing.Point(200, 152);
             this.lblPollNum.Name = "lblPollNum";
             this.lblPollNum.Size = new System.Drawing.Size(117, 20);
@@ -455,7 +429,7 @@ namespace TwitchPlays
             // lblVoteResult
             // 
             this.lblVoteResult.BackColor = System.Drawing.Color.Transparent;
-            this.lblVoteResult.Font = new System.Drawing.Font("codefont1", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVoteResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVoteResult.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblVoteResult.Location = new System.Drawing.Point(7, 179);
             this.lblVoteResult.Name = "lblVoteResult";
@@ -467,7 +441,7 @@ namespace TwitchPlays
             // lblInputAlert
             // 
             this.lblInputAlert.BackColor = System.Drawing.Color.Transparent;
-            this.lblInputAlert.Font = new System.Drawing.Font("codefont1", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInputAlert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInputAlert.ForeColor = System.Drawing.Color.Crimson;
             this.lblInputAlert.Location = new System.Drawing.Point(6, 202);
             this.lblInputAlert.Name = "lblInputAlert";
@@ -490,7 +464,7 @@ namespace TwitchPlays
             // lblDemocracyCount
             // 
             this.lblDemocracyCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblDemocracyCount.Font = new System.Drawing.Font("codefont1", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDemocracyCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDemocracyCount.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblDemocracyCount.Location = new System.Drawing.Point(10, 111);
             this.lblDemocracyCount.Name = "lblDemocracyCount";
@@ -502,7 +476,7 @@ namespace TwitchPlays
             // lblAnarchyCount
             // 
             this.lblAnarchyCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblAnarchyCount.Font = new System.Drawing.Font("codefont1", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnarchyCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAnarchyCount.ForeColor = System.Drawing.Color.Crimson;
             this.lblAnarchyCount.Location = new System.Drawing.Point(269, 110);
             this.lblAnarchyCount.Name = "lblAnarchyCount";
@@ -511,10 +485,21 @@ namespace TwitchPlays
             this.lblAnarchyCount.Text = "0";
             this.lblAnarchyCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblAlert
+            // 
+            this.lblAlert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlert.ForeColor = System.Drawing.Color.Orange;
+            this.lblAlert.Location = new System.Drawing.Point(945, 18);
+            this.lblAlert.Name = "lblAlert";
+            this.lblAlert.Size = new System.Drawing.Size(305, 30);
+            this.lblAlert.TabIndex = 19;
+            this.lblAlert.Text = "TwitchChat lag detected";
+            this.lblAlert.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pbModeForeground
             // 
             this.pbModeForeground.BackColor = System.Drawing.Color.Silver;
-            this.pbModeForeground.Image = global::TwitchPlays.Properties.Resources.pikachu_left;
+            this.pbModeForeground.Image = global::TwitchPlays.Properties.Resources.alert32;
             this.pbModeForeground.Location = new System.Drawing.Point(139, 111);
             this.pbModeForeground.Name = "pbModeForeground";
             this.pbModeForeground.Size = new System.Drawing.Size(27, 27);
@@ -531,17 +516,6 @@ namespace TwitchPlays
             this.pbModeBackground.TabIndex = 26;
             this.pbModeBackground.TabStop = false;
             // 
-            // pbInputAlert32
-            // 
-            this.pbInputAlert32.BackColor = System.Drawing.Color.Transparent;
-            this.pbInputAlert32.Image = global::TwitchPlays.Properties.Resources.alert32;
-            this.pbInputAlert32.Location = new System.Drawing.Point(50, 202);
-            this.pbInputAlert32.Name = "pbInputAlert32";
-            this.pbInputAlert32.Size = new System.Drawing.Size(32, 32);
-            this.pbInputAlert32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbInputAlert32.TabIndex = 24;
-            this.pbInputAlert32.TabStop = false;
-            // 
             // pbClock32
             // 
             this.pbClock32.Image = global::TwitchPlays.Properties.Resources.clock32;
@@ -555,35 +529,41 @@ namespace TwitchPlays
             // pbAlert32
             // 
             this.pbAlert32.Image = global::TwitchPlays.Properties.Resources.alert32;
-            this.pbAlert32.Location = new System.Drawing.Point(10, 76);
+            this.pbAlert32.Location = new System.Drawing.Point(943, 16);
             this.pbAlert32.Name = "pbAlert32";
             this.pbAlert32.Size = new System.Drawing.Size(32, 32);
             this.pbAlert32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbAlert32.TabIndex = 18;
             this.pbAlert32.TabStop = false;
             // 
+            // pbInputAlert32
+            // 
+            this.pbInputAlert32.BackColor = System.Drawing.Color.Transparent;
+            this.pbInputAlert32.Image = global::TwitchPlays.Properties.Resources.alert32;
+            this.pbInputAlert32.Location = new System.Drawing.Point(50, 202);
+            this.pbInputAlert32.Name = "pbInputAlert32";
+            this.pbInputAlert32.Size = new System.Drawing.Size(32, 32);
+            this.pbInputAlert32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbInputAlert32.TabIndex = 24;
+            this.pbInputAlert32.TabStop = false;
+            // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("codefont1", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Aquamarine;
-            this.label1.Location = new System.Drawing.Point(10, 9);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(934, 453);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(307, 39);
+            this.label1.Size = new System.Drawing.Size(224, 13);
             this.label1.TabIndex = 30;
-            this.label1.Text = "It\'s a whole new world we live in...";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Text = "https://github.com/im420blaziken/twitchplays";
             // 
             // LogForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(326, 481);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblVoteResult);
-            this.Controls.Add(this.pbInputAlert32);
-            this.Controls.Add(this.lblInputAlert);
             this.Controls.Add(this.chatBox);
             this.Controls.Add(this.lblDemocracyCount);
             this.Controls.Add(this.pbModeForeground);
@@ -594,7 +574,6 @@ namespace TwitchPlays
             this.Controls.Add(this.pbClock32);
             this.Controls.Add(this.lblTimespan);
             this.Controls.Add(this.lblPokemon);
-            this.Controls.Add(this.lblYellow);
             this.Controls.Add(this.lblTwitchPlays);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpOptions);
@@ -604,8 +583,10 @@ namespace TwitchPlays
             this.Controls.Add(this.voteBox);
             this.Controls.Add(this.lblAlert);
             this.Controls.Add(this.lblGoal);
+            this.Controls.Add(this.pbInputAlert32);
+            this.Controls.Add(this.lblInputAlert);
             this.Name = "LogForm";
-            this.Text = "Log";
+            this.Text = "TwitchPlaysYellow";
             this.Shown += new System.EventHandler(this.LogForm_Shown);
             this.LocationChanged += new System.EventHandler(this.LogForm_LocationChanged);
             this.grpOptions.ResumeLayout(false);
@@ -614,9 +595,9 @@ namespace TwitchPlays
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbModeForeground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbModeBackground)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInputAlert32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClock32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAlert32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInputAlert32)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -639,13 +620,10 @@ namespace TwitchPlays
         private System.Windows.Forms.Button btnSendTestButton;
         private System.Windows.Forms.TextBox txtTestButton;
         private System.Windows.Forms.Label lblTwitchPlays;
-        private System.Windows.Forms.Label lblYellow;
         private System.Windows.Forms.Label lblPokemon;
         private System.Windows.Forms.Label lblTimespan;
         private System.Windows.Forms.PictureBox pbClock32;
         private System.Windows.Forms.Label lblVoteClock;
-        private System.Windows.Forms.PictureBox pbAlert32;
-        private System.Windows.Forms.Label lblAlert;
         private System.Windows.Forms.ListBox chatBox;
         private System.Windows.Forms.Label lblPollNum;
         private System.Windows.Forms.Label lblVoteResult;
@@ -663,6 +641,8 @@ namespace TwitchPlays
         private System.Windows.Forms.Label lblDemocracyCount;
         private System.Windows.Forms.Label lblAnarchyCount;
         private System.Windows.Forms.PictureBox pbModeForeground;
+        private System.Windows.Forms.PictureBox pbAlert32;
+        private System.Windows.Forms.Label lblAlert;
         private System.Windows.Forms.Label label1;
 
     }

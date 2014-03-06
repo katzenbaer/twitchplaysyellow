@@ -273,7 +273,7 @@ namespace TwitchPlays
 
         private void ParseThenWatch()
         {
-            if (this.InvokeRequired)
+            if (this.InvokeRequired) // TODO macro this
             {
                 this.Invoke(new Action(
                             () =>

@@ -160,14 +160,9 @@
     <None Include="Resources\alert32.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pkmn_frame.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\000.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\pikachu_left.png" />
-    <Content Include="Resources\pikachu_right.png" />
     <Content Include="vJoyInterface.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

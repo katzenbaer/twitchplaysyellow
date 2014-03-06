@@ -136,7 +136,7 @@ namespace TwitchPlays
             set
             {
                 _LagNoticeEnabled = value;
-                if (this.InvokeRequired)
+                if (this.InvokeRequired) // TODO macro this
                 {
                     this.Invoke(new Action(
                         () =>
@@ -169,7 +169,7 @@ namespace TwitchPlays
             }
             set
             {
-                if (this.InvokeRequired)
+                if (this.InvokeRequired) // TODO macro this
                 {
                     this.Invoke(new Action(
                         () =>
@@ -255,7 +255,7 @@ namespace TwitchPlays
                 }
 
             _goto_not_voting:
-                if (this.InvokeRequired)
+                if (this.InvokeRequired) // TODO macro this
                 {
                     try
                     {
@@ -390,7 +390,7 @@ namespace TwitchPlays
         }
         public void OnGameMode(User.ModeType mode)
         {
-            if (this.InvokeRequired)
+            if (this.InvokeRequired) // TODO macro this
             {
                 this.Invoke(new Action(
                         () =>
@@ -404,7 +404,7 @@ namespace TwitchPlays
                                         lblVoteResult.Location = new Point(7, 138);
                                         chatBox.Location = new Point(11, 158);
                                         chatBox.Size = new Size(306, 308);
-                                        pbModeForeground.Image = global::TwitchPlays.Properties.Resources.pikachu_left;
+                                        pbModeForeground.Image = global::TwitchPlays.Properties.Resources.alert32; // left-facing sprite
                                         chatBox.Items.Clear();
                                         Program.TallyTime = DateTime.Now;
                                     }
@@ -416,7 +416,7 @@ namespace TwitchPlays
                                         lblVoteResult.Location = new Point(7, 179);
                                         chatBox.Location = new Point(11, 256);
                                         chatBox.Size = new Size(306, 210);
-                                        pbModeForeground.Image = global::TwitchPlays.Properties.Resources.pikachu_right;
+                                        pbModeForeground.Image = global::TwitchPlays.Properties.Resources.alert32; // right-facing sprite
                                         chatBox.Items.Clear();
                                     }
                                     break;
@@ -435,7 +435,7 @@ namespace TwitchPlays
                             lblVoteResult.Location = new Point(7, 138);
                             chatBox.Location = new Point(11, 158);
                             chatBox.Size = new Size(306, 308);
-                            pbModeForeground.Image = global::TwitchPlays.Properties.Resources.pikachu_left;
+                            pbModeForeground.Image = global::TwitchPlays.Properties.Resources.alert32; // left-facing sprite
                             chatBox.Items.Clear();
                             Program.TallyTime = DateTime.Now;
                         }
@@ -447,7 +447,7 @@ namespace TwitchPlays
                             lblVoteResult.Location = new Point(7, 179);
                             chatBox.Location = new Point(11, 256);
                             chatBox.Size = new Size(306, 210);
-                            pbModeForeground.Image = global::TwitchPlays.Properties.Resources.pikachu_right;
+                            pbModeForeground.Image = global::TwitchPlays.Properties.Resources.alert32; // right-facing sprite
                             chatBox.Items.Clear();
                         }
                         break;
@@ -514,7 +514,7 @@ namespace TwitchPlays
             _goto_noswitch:
                 try
                 {
-                    if (this.InvokeRequired)
+                    if (this.InvokeRequired) // TODO macro this
                     {
                         this.Invoke(new Action(
                             () =>
@@ -555,7 +555,7 @@ namespace TwitchPlays
         }
         /*public void SetUserCount(int d)
         {
-            if (this.InvokeRequired)
+            if (this.InvokeRequired) // TODO macro this
             {
                 this.Invoke(new Action(
                         () =>
@@ -578,12 +578,12 @@ namespace TwitchPlays
                 Thread.Sleep(50);
                 try
                 {
-                    if (this.InvokeRequired)
+                    if (this.InvokeRequired) // TODO macro this
                     {
                         this.Invoke(new Action(
                                 () =>
                                 {
-                                    Program.SortNominees();
+                                    Program.SortNominees(); // TODO Limit # of items to size of box, like for logBox
                                     voteBox.Items.Clear();
                                     foreach (Nominee nominee in Program.Nominees)
                                     {
@@ -596,7 +596,7 @@ namespace TwitchPlays
                     }
                     else if (Program.IsMainThread)
                     {
-                        Program.SortNominees();
+                        Program.SortNominees(); // TODO Limit # of items to size of box, like for logBox
                         voteBox.Items.Clear();
                         foreach (Nominee nominee in Program.Nominees)
                         {
@@ -675,7 +675,7 @@ namespace TwitchPlays
         public void vJoySendButton(uint btn, uint cnt)
         {
             Console.WriteLine("vJoy: Sending " + btn + ", " + btn + " time(s)");
-            if (this.InvokeRequired)
+            if (this.InvokeRequired) // TODO macro this
             {
                 for (int i = 0; i < cnt; i++)
                 {
@@ -734,7 +734,7 @@ namespace TwitchPlays
 
         public void SetLastMsg(string msg)
         {
-            if (this.InvokeRequired)
+            if (this.InvokeRequired) // TODO macro this
             {
                 this.Invoke(new Action(
                     () =>
@@ -770,7 +770,7 @@ namespace TwitchPlays
         {
             get
             {
-                if (this.InvokeRequired)
+                if (this.InvokeRequired) // TODO macro this
                 {
                     string temp = "";
                     this.Invoke(new Action(
@@ -807,7 +807,7 @@ namespace TwitchPlays
                 goal_thread = new Thread(() => ResetGoal(5));
                 goal_thread.Start();
             }
-            if (this.InvokeRequired)
+            if (this.InvokeRequired) // TODO macro this
             {
                 this.Invoke(new Action(
                    () =>
@@ -841,7 +841,7 @@ namespace TwitchPlays
                 Users.ClearGoal.Clear();
             }
 
-            if (this.InvokeRequired)
+            if (this.InvokeRequired) // TODO macro this
             {
                 this.Invoke(new Action(
                     () =>
@@ -936,7 +936,7 @@ namespace TwitchPlays
             _bufferLock = !_bufferLock;
 
             string dumpfileName = DateTime.Now.ToLocalTime().ToString("yyyy_MM_dd") + ".txt";
-            if (this.InvokeRequired)
+            if (this.InvokeRequired) // TODO macro this
             {
                 this.Invoke(new Action(
                        () =>
@@ -1042,7 +1042,7 @@ namespace TwitchPlays
             if (!Program.ShouldAutosave) return;
             ActivateApp("VisualBoyAdvance-M");
             Thread.Sleep(5000);
-            if (this.InvokeRequired)
+            if (this.InvokeRequired) // TODO macro this
             {
                 this.Invoke(new Action(
                     () =>
@@ -1057,7 +1057,7 @@ namespace TwitchPlays
         {
             ActivateApp("VisualBoyAdvance-M");
             Thread.Sleep(5000);
-            if (this.InvokeRequired)
+            if (this.InvokeRequired) // TODO macro this
             {
                 this.Invoke(new Action(
                     () =>

@@ -63,16 +63,6 @@ namespace TwitchPlays.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap _000 {
-            get {
-                object obj = ResourceManager.GetObject("_000", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap alert32 {
             get {
                 object obj = ResourceManager.GetObject("alert32", resourceCulture);
@@ -86,46 +76,6 @@ namespace TwitchPlays.Properties {
         public static System.Drawing.Bitmap clock32 {
             get {
                 object obj = ResourceManager.GetObject("clock32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Image11 {
-            get {
-                object obj = ResourceManager.GetObject("Image11", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap pikachu_left {
-            get {
-                object obj = ResourceManager.GetObject("pikachu_left", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap pikachu_right {
-            get {
-                object obj = ResourceManager.GetObject("pikachu_right", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap pkmn_frame {
-            get {
-                object obj = ResourceManager.GetObject("pkmn_frame", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

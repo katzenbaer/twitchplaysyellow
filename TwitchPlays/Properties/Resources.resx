@@ -124,19 +124,7 @@
   <data name="clock32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clock32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pikachu_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pikachu_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pikachu_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pikachu_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pkmn_frame" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pkmn_frame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="vote32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vote32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_000" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
